@@ -1,6 +1,5 @@
 # Number Guessing Game for Android
 
-![App Logo](app_logo.png)
 
 Welcome to the Number Guessing Game for Android! In this game, players try to guess the number chosen by the app. The app provides hints like "higher" or "lower" until the user correctly guesses the number. It's a fun and engaging way to challenge your guessing skills!
 
