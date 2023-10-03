@@ -41,3 +41,24 @@ Follow these instructions to get a copy of the project up and running on your lo
 
    ```bash
    git clone https://github.com/your-username/number-guessing-game-android.git
+   Open the project in Android Studio.
+
+Build and run the app on an emulator or physical Android device.
+
+## How to Play
+1. Launch the app on your Android device.
+2. Enter your guess in the input field.
+3. Click the "Submit" button to submit your guess.
+4. The app will provide a hint (higher or lower).
+5. Repeat steps 2-4 until you correctly guess the number.
+6. Your level will increase as you successfully guess the number.
+
+## Contributing
+Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and test them thoroughly.
+4. Commit your changes with clear and concise commit messages.
+5. Push your changes to your fork.
+6. Create a pull request to merge your changes into the main repository.
