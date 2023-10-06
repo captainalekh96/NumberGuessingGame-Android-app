@@ -27,6 +27,10 @@ public class MainActivity extends AppCompatActivity {
         textView.setText("Level:- "+level);
 
 }
+public void generateRandom(){
+            Random ran =new Random();
+            this.randNo=ran.nextInt(randNo+100);
+}
     public void numberRandom(View view){
         count++;
         EditText number = (EditText)findViewById(R.id.userNumber);
@@ -47,8 +51,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this,"Congratulations!!! You can't beat me this time.",Toast.LENGTH_LONG).show();
             number.getText().clear();
             Toast.makeText(this,"Level up to: "+level+" Can you Guess Now",Toast.LENGTH_LONG).show();
-            Random ran =new Random();
-            this.randNo=ran.nextInt(randNo+100);
+           generateRandom();
             Log.i("Randomnumber","number is"+randNo);
             TextView textView = (TextView) findViewById(R.id.levelView);
 
@@ -71,9 +74,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Random ran=new Random();
+      
         this.count=0;
-        this.randNo= ran.nextInt(100);
+        generateRandom();
         Log.i("Randomnumber","number is"+randNo);
         SharedPreferences prefs = this.getSharedPreferences("Mylevel", MODE_PRIVATE);
         level=prefs.getInt("level", 1);
